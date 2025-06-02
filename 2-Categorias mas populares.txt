@@ -1,6 +1,0 @@
-Categoría	Total Ingresos
-Electrónicos	409476100.0
-Electrodomésticos	283260200.0
-Muebles	192528900.0
-Instrumentos musicales	75102400.0
-Deportes y diversión	33350100.0
