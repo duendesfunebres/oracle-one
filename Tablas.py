@@ -9,7 +9,6 @@ def Tiendas(tiend):
     cursor = conn.cursor()
     local = f"tienda{tiend}"
     cursor.execute(f"SELECT COUNT(*) FROM {local}")  
-
     cantidad_filas = cursor.fetchone()[0]
     conn.close
     if cantidad_filas == 0:
@@ -25,11 +24,6 @@ def Tiendas(tiend):
             print("Código de tienda no válido.")
             return
         tienda, tien = tiendas[tiend]
-        """
-        if not os.path.exists(tienda):
-            print(f"El archivo {tienda} no existe. Verifica la ruta.")
-            return
-        """
         with open(tienda, 'r', encoding="utf-8") as nuevos:
             insertar = csv.reader(nuevos, delimiter=',')
             filas = list(insertar)
